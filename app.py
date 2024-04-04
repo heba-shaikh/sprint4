@@ -28,17 +28,31 @@ app.layout = html.Div([
         options=[{'label': state, 'value': state} for state in states],   #specifies to go through each state in the dataframe as the options for the dropdown
         multi=False,     #allows to click single state
         placeholder="Select State",   #name of the dropdown before state is selected
-        className= "twelve columns",      #formats dropdown to be on left half of screen
-        style={"margin-bottom": "120px"}
+        className= "twelve columns"      #formats dropdown to be on left half of screen
 
 ),
+    html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
     dcc.Dropdown(      #use dcc to create dropdown menu
         id='zipcode-dropdown',      #ID tag for dropdown
         multi=True,     #allows to click multiple zipcodes
         placeholder="Select Zipcode",   #name of the dropdown before zipcodes are selected
-        className= "twelve columns",                   #formats dropdown to be on right half of screen
-        style={"margin-bottom": "120px"}
+        className= "twelve columns"                   #formats dropdown to be on right half of screen
 ),
+    html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
+html.Br(),
     html.P("Enter Condition:"),
 dcc.RadioItems(
         id='condition-dropdown',
